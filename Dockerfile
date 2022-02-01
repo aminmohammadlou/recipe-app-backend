@@ -10,6 +10,6 @@ RUN mkdir /app
 WORKDIR /app
 COPY ./app /app
 
-RUN adduser -D user
+RUN adduser -S user
 RUN chown user /app
 USER user
